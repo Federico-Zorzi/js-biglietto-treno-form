@@ -2,7 +2,7 @@ const userFullnameEl = document.getElementById("fullname");
 const kmToDoEl = document.getElementById("km-to-do");
 const ageRangeEl = document.getElementById("age-range");
 
-const createTicketButton = document.getElementById("create-ticket-button");
+const createTicket = document.getElementById("create-ticket");
 const cancelDataButton = document.getElementById("cancel-data-button");
 
 const ticket = document.getElementById("ticket");
@@ -40,9 +40,10 @@ const cancelData = () => {
 };
 
 // Create ticket button
-createTicketButton.addEventListener("click", () => {
+createTicket.addEventListener("submit", (event) => {
+  event.preventDefault();
   const userFullname = userFullnameEl.value;
-  const kmToDo = parseInt(kmToDoEl.value);
+  const kmToDo = kmToDoEl.value ? parseInt(kmToDoEl.value) : 0;
   const ageRange = ageRangeEl.value;
 
   let typeOfTicket = `Biglietto Standard`;
