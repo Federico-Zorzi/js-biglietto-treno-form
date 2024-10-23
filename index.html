@@ -40,10 +40,10 @@
   <body class="bg-danger">
     <main>
       <div class="container">
-        <div class="row row-cols-1 text-center">
-          <div class="col">
+        <div class="row row-cols-1">
+          <div class="col text-center">
             <!-- data input section -->
-            <h2 class="fw-semibold text-light">
+            <h2 class="fw-semibold text-light my-3">
               CALCOLA IL PREZZO DEL TUO BIGLIETTO
             </h2>
             <div class="card">
@@ -77,40 +77,72 @@
                       >Fascia d'età
                     </label>
                     <select id="age-range" class="form-select">
-                      <option selected="Minorenne">Minorenne</option>
-                      <option value="Maggiorenne">Maggiorenne</option>
-                      <option value="Over 65">Over 65</option>
+                      <option>Minorenne</option>
+                      <option>Maggiorenne</option>
+                      <option>Over 65</option>
                     </select>
                   </div>
                 </div>
 
-                <div class="row justify-content-start">
-                  <div class="col">
-                    <button
-                      type="button"
-                      id="create-ticket-button"
-                      class="btn btn-success"
-                    >
-                      Genera
-                    </button>
-                  </div>
-                  <div class="col">
-                    <button
-                      type="button"
-                      id="cancel-data-button"
-                      class="btn btn-danger"
-                    >
-                      Annulla
-                    </button>
-                  </div>
-                </div>
+                <button
+                  type="button"
+                  id="create-ticket-button"
+                  class="btn btn-success"
+                >
+                  Genera
+                </button>
+
+                <button
+                  type="button"
+                  id="cancel-data-button"
+                  class="btn btn-danger"
+                >
+                  Annulla
+                </button>
               </div>
             </div>
           </div>
 
           <div class="col">
-            <!-- sezione biglietto -->
-            <h2 class="fw-semibold text-light">IL TUO BIGLIETTO</h2>
+            <div>
+              <h2 class="text-center fw-semibold text-light mt-3">
+                IL TUO BIGLIETTO
+              </h2>
+            </div>
+            <div id="ticket"></div>
+            <!-- ticket -->
+            <!--             <div class="card">
+              <div class="card-body">
+                <h2 class="card-title h5 fw-bold">DATTAGLIO PASSEGGERI</h2>
+                <div class="row border-top border-bottom">
+                  <div class="col-4 text-bg-secondary">
+                    <h5 class="fw-bold fs-6 mt-2 mb-0">NOME PASSEGGERO</h5>
+                    <span>Name</span>
+                  </div>
+                  <div class="col-8">
+                    <table class="table table-borderless">
+                      <thead>
+                        <tr>
+                          <th scope="col">Offerta</th>
+                          <th scope="col">Carrozza</th>
+                          <th scope="col">Codice CP</th>
+                          <th scope="col">Costo biglietto</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>item</td>
+                          <td>item</td>
+                          <td>item</td>
+                          <td>item</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!-- ticket -->
           </div>
         </div>
       </div>
