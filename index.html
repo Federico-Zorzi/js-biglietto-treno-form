@@ -54,21 +54,30 @@
                     <label for="fullname" class="form-label"
                       >Nome Cognome
                     </label>
-                    <input type="text" id="fullname" class="form-control" />
+                    <input
+                      type="text"
+                      id="fullname"
+                      class="form-control"
+                      required
+                    />
                   </div>
                   <div class="col">
                     <label for="km-to-do" class="form-label"
                       >Km da percorrere
                     </label>
-                    <input type="text" id="km-to-do" class="form-control" />
+                    <input
+                      type="number"
+                      id="km-to-do"
+                      class="form-control"
+                      required
+                    />
                   </div>
                   <div class="col">
                     <label for="age-range" class="form-label"
                       >Fascia d'età
                     </label>
-                    <select class="form-select" id="age-range">
-                      <option selected>Seleziona la tua fascia d'età</option>
-                      <option value="Minorenne">Minorenne</option>
+                    <select id="age-range" class="form-select">
+                      <option selected="Minorenne">Minorenne</option>
                       <option value="Maggiorenne">Maggiorenne</option>
                       <option value="Over 65">Over 65</option>
                     </select>
@@ -77,12 +86,20 @@
 
                 <div class="row justify-content-start">
                   <div class="col">
-                    <button type="button" class="btn btn-success">
+                    <button
+                      type="button"
+                      id="create-ticket-button"
+                      class="btn btn-success"
+                    >
                       Genera
                     </button>
                   </div>
                   <div class="col">
-                    <button type="button" class="btn btn-danger">
+                    <button
+                      type="button"
+                      id="cancel-data-button"
+                      class="btn btn-danger"
+                    >
                       Annulla
                     </button>
                   </div>
