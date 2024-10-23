@@ -61,9 +61,9 @@ createTicket.addEventListener("submit", (event) => {
   ticket.innerHTML = `<div id='ticket' class="card">
         <div class="card-body">
             <h2 class="card-title h5 fw-bold">DETTAGLIO PASSEGGERI</h2>
-            <div class="row border-top border-bottom">
-                <div class="col-4 text-bg-secondary">
-                    <h5 class="fw-bold fs-6 mt-2 mb-0">NOME PASSEGGERO</h5>
+            <div class="row g-0 border-top border-bottom">
+                <div class="col-4 text-bg-secondary p-2">
+                    <h5 class="fw-bold fs-6 mb-0">NOME PASSEGGERO</h5>
                     <span>${userFullname}</span>
                 </div>
                 <div class="col-8">
