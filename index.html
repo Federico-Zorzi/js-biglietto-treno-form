@@ -37,10 +37,67 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+  <body class="bg-danger">
+    <main>
+      <div class="container">
+        <div class="row row-cols-1 text-center">
+          <div class="col">
+            <!-- data input section -->
+            <h2 class="fw-semibold text-light">
+              CALCOLA IL PREZZO DEL TUO BIGLIETTO
+            </h2>
+            <div class="card">
+              <div class="card-body">
+                <!-- input fields -->
+                <div class="row mb-4">
+                  <div class="col">
+                    <label for="fullname" class="form-label"
+                      >Nome Cognome
+                    </label>
+                    <input type="text" id="fullname" class="form-control" />
+                  </div>
+                  <div class="col">
+                    <label for="km-to-do" class="form-label"
+                      >Km da percorrere
+                    </label>
+                    <input type="text" id="km-to-do" class="form-control" />
+                  </div>
+                  <div class="col">
+                    <label for="age-range" class="form-label"
+                      >Fascia d'età
+                    </label>
+                    <select class="form-select" id="age-range">
+                      <option selected>Seleziona la tua fascia d'età</option>
+                      <option value="Minorenne">Minorenne</option>
+                      <option value="Maggiorenne">Maggiorenne</option>
+                      <option value="Over 65">Over 65</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row justify-content-start">
+                  <div class="col">
+                    <button type="button" class="btn btn-success">
+                      Genera
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-danger">
+                      Annulla
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <!-- sezione biglietto -->
+            <h2 class="fw-semibold text-light">IL TUO BIGLIETTO</h2>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <!-- BOOSTRAP JS -->
     <script
