@@ -19,13 +19,10 @@ const priceCalculation = (km, age) => {
   fullTicketPriceWithoutDiscount = km * ticketCostPerKm;
   if (age === "Minorenne") {
     discount = (fullTicketPriceWithoutDiscount * percDiscountUnder18) / 100;
-    fullTicketPrice = fullTicketPriceWithoutDiscount - discount;
   } else if (age === "Over 65") {
     discount = (fullTicketPriceWithoutDiscount * percDiscountOver65) / 100;
-    fullTicketPrice = fullTicketPriceWithoutDiscount - discount;
-  } else {
-    fullTicketPrice = fullTicketPriceWithoutDiscount;
   }
+  fullTicketPrice = fullTicketPriceWithoutDiscount - discount;
 
   return fullTicketPrice;
 };
