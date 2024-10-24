@@ -81,7 +81,7 @@ createTicket.addEventListener("submit", (event) => {
                             <td>${typeOfTicket}</td>
                             <td>${carriage}</td>
                             <td>${cpCodeFormatted}</td>
-                            <td>${ticketPrice}€</td>
+                            <td>${ticketPrice.toFixed(2)}€</td>
                         </tr>
                         </tbody>
                     </table>
